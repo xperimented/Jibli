@@ -1,20 +1,33 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <div class="padding">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <div class="logo">
+      <ion-icon color="light" name="briefcase-outline"></ion-icon>
+
+    </div>
+<ion-item>
+  <ion-label color="light"> <ion-icon name="people-circle-outline"></ion-icon></ion-label>
+  <ion-input color="light" placeholder="E-mail" type="email"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label color="light"><ion-icon name="key-outline"></ion-icon></ion-label>
+  <ion-input color="light" placeholder="******" type="password"></ion-input>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-button color="light" fill="clear" slot="end">Forgot your password ?</ion-button>
+</ion-item>
+
+<ion-button color="light" fill="outline" shape="round" expand="block" routerLink="/tabs" >Login</ion-button>
+<br>
+<ion-item lines="none">
+  <ion-label text-center color="light">New to Jibli ?</ion-label>
+</ion-item>
+
+<ion-button shape="round" expand="block" routerLink="/signup" >Sign Up</ion-button>
+
+
+</div>
 </ion-content>
