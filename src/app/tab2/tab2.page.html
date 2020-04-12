@@ -14,4 +14,14 @@
     <ion-label>Heure</ion-label>
     <ion-datetime displayFormat="HH:mm"></ion-datetime>
   </ion-item>
+
+<ion-item>
+<ion-label> Travling from </ion-label>
+<ion-label> {{departure}} to {{destination}} </ion-label>
+
+<ion-button color="dark" fill="outline" shape="round" expand="full" (click)="showAdvncePicker()">select</ion-button>
+</ion-item>
+
+
+
 </ion-content>
