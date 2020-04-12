@@ -1,28 +1,30 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>tab2</ion-title>
+    <ion-title>Jibli</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  
+<ion-item (click)="showAdvncePicker()">
+  <ion-icon slot="start"name="trail-sign-outline"></ion-icon>
+  <ion-label > Travling from {{departure}} to {{destination}} </ion-label>
+  </ion-item>
+  <br>  
   <ion-item lines="none">
+    <ion-icon slot="start" name="calendar-outline"></ion-icon>
     <ion-label>Date</ion-label>
     <ion-datetime displayFormat="MM/DD/YYYY"></ion-datetime>
   </ion-item>
   <br>
-  <ion-item lines="none"s>
+  <ion-item lines="none">
+    <ion-icon slot="start" name="time-outline"></ion-icon>
     <ion-label>Heure</ion-label>
     <ion-datetime displayFormat="HH:mm"></ion-datetime>
   </ion-item>
+  <br>
 
-<ion-item (click)="showAdvncePicker()">
-  
-<ion-label > Travling from </ion-label>
-<ion-label > {{departure}} to {{destination}} </ion-label>
-
-
-</ion-item>
-
+  <ion-button color="light" fill="outline" shape="round" expand="block"  >validate</ion-button>
 
 
 </ion-content>
