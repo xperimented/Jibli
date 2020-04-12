@@ -4,3 +4,8 @@ ion-item {
 .padding {
   padding: 5%;
 }
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0px 10px;
+}
