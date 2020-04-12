@@ -1,3 +1,6 @@
-ion-content {
-    --ion-background-color: linear-gradient(#e66465, #9198e5);
-  }
+ion-item {
+  --ion-background-color: transparent !important;
+}
+.padding {
+  padding: 5%;
+}

@@ -1,28 +1,45 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>tab2</ion-title>
+    <ion-title>Choose a route</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class=padding>
+    <br>
+    <ion-item lines="none" (click)="showAdvncePicker()">
+  
+      <ion-label > <ion-icon name="trail-sign-outline"></ion-icon> Travling from </ion-label>
+      <ion-label > {{departure}} to {{destination}} </ion-label>
+      
+      
+      </ion-item>
+      <br>
+      <ion-item lines="none">
+      <ion-list>
+        
+        <ion-label><ion-icon name="briefcase-outline"></ion-icon> Choose package form</ion-label>
+        <ion-item *ngFor="let entry of form">
+          <ion-label>{{entry.val}}</ion-label>
+          <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+        </ion-item>
+      </ion-list>
+    </ion-item>
+      <br>
   <ion-item lines="none">
-    <ion-label>Date</ion-label>
+    <ion-label><ion-icon name="calendar-outline"></ion-icon> Date</ion-label>
     <ion-datetime displayFormat="MM/DD/YYYY"></ion-datetime>
   </ion-item>
   <br>
-  <ion-item lines="none"s>
-    <ion-label>Heure</ion-label>
+  <ion-item lines="none">
+    <ion-label><ion-icon name="time-outline"></ion-icon> Hour</ion-label>
     <ion-datetime displayFormat="HH:mm"></ion-datetime>
   </ion-item>
 
-<ion-item (click)="showAdvncePicker()">
-  
-<ion-label > Travling from </ion-label>
-<ion-label > {{departure}} to {{destination}} </ion-label>
 
-
-</ion-item>
-
-
+<br>
+<br>
+<ion-button shape="round" expand="block" routerLink="/tabs" >research</ion-button>
+</div>
 
 </ion-content>

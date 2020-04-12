@@ -62,7 +62,12 @@ export class Tab2Page implements OnInit {
     });
 
   }
-
+  public form = [
+    { val: 'Papers', isChecked: false },
+    { val: 'Small package', isChecked: false },
+    { val: 'Medium package', isChecked: false },
+    { val: 'Large package', isChecked: false },
+  ];
 }
 
 
