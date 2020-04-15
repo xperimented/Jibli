@@ -2,7 +2,7 @@
   <ion-toolbar>
     <div class="space-between">
       <ion-button   clear routerLink="/tabs" >Back</ion-button>
-    <ion-title>Propose a route</ion-title>
+    <ion-title>search a route</ion-title>
   </div>
   </ion-toolbar>
 </ion-header>
@@ -18,17 +18,7 @@
       
       </ion-item>
       <br>
-      <ion-item lines="none">
-      <ion-list>
-        
-        <ion-label><ion-icon name="briefcase-outline"></ion-icon> Choose package form</ion-label>
-        <ion-item *ngFor="let entry of form">
-          <ion-label>{{entry.val}}</ion-label>
-          <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
-        </ion-item>
-      </ion-list>
-    </ion-item>
-      <br>
+      
   <ion-item lines="none">
     <ion-label><ion-icon name="calendar-outline"></ion-icon> Date</ion-label>
     <ion-datetime displayFormat="MM/DD/YYYY"></ion-datetime>
@@ -43,7 +33,7 @@
 
 <br>
 <br>
-<ion-button shape="round" expand="block" routerLink="/tabs" >Propose</ion-button>
+<ion-button shape="round" expand="block" routerLink="/tabs" >search</ion-button>
 </div>
 
 </ion-content>
