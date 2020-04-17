@@ -8,6 +8,7 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
+        
         path: 'tab1',
         children: [
           {
