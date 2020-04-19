@@ -1,6 +1,9 @@
 <ion-header>
   <ion-toolbar>
+     <div class="space-between">
+    <ion-button   clear routerLink="/tabs" >Back</ion-button>
     <ion-title>notifications</ion-title>
+    </div>
   </ion-toolbar>
 </ion-header>
 
@@ -8,8 +11,27 @@
   <ion-grid>
     <ion-row>
       <ion-col size-md="6" offset-md="3">
-
-
+  <br>
+  <br>
+  <ion-card>
+    <ion-item>
+      <ion-label>
+        <h2><b>Name of applicant</b></h2>
+  
+      </ion-label>
+    </ion-item>
+    <ion-item lines="none" class="commande">
+      <ion-label text-wrap>
+        je vous offre mes services pour transporter votre colis de "....." à "......" a HH.MN 
+      </ion-label>
+    </ion-item>
+    <ion-button size="small" color="success">
+      <ion-icon slot="start" name="checkmark-outline"></ion-icon>
+      accept</ion-button>
+      <ion-button  size="small" color="danger">
+        <ion-icon slot="start" name="close-outline"></ion-icon>
+        refuse</ion-button>
+  </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
